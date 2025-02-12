@@ -70,7 +70,7 @@ const SearchBar = ({isHome, handleClickRecrutingBtn, isOnlyRecruting, onFilterCh
                            onKeyDown={handleKeyDown}
                            placeholder={"원하는 스터디를 검색해보세요"}
                     />
-                    <img src ={searchIcon} width="20px"/>
+                    <img src ={searchIcon} alt="STAR D Logo" width="20px"/>
                 </div>
             </div>
         </div>

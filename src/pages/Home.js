@@ -296,8 +296,8 @@ const Home = () => {
                                                     우아하고 효율적인 학습 경험을 선사합니다.</p>
                                             </div>
                                             <div id={"detail-img-btn"}>
-                                                <img src={scheduleimg} width={"41px"}/>
-                                                <img src={checktodo} width={"50px"}/>
+                                                <img src={scheduleimg} alt="STAR D Logo" width={"41px"}/>
+                                                <img src={checktodo} alt="STAR D Logo" width={"50px"}/>
                                             </div>
                                         </div>
                                         <div id={"detail-03"} data-aos="fade-left">
@@ -311,8 +311,8 @@ const Home = () => {
                                                     최적의 장소를 선택하세요!</p>
                                             </div>
                                             <div id={"detail-img-btn"}>
-                                                <img src={mapicon} width={"41px"} height={"41px"}/>
-                                                <img src={chaticon} width={"41px"} height={"41px"}/>
+                                                <img src={mapicon} alt="STAR D Logo" width={"41px"} height={"41px"}/>
+                                                <img src={chaticon} alt="STAR D Logo" width={"41px"} height={"41px"}/>
                                             </div>
                                         </div>
                                         <div id={"detail-04"} data-aos="fade-left">
@@ -350,12 +350,12 @@ const Home = () => {
                                     스터디 커뮤니티</p>
                                 <div id={"detail-images"}>
                                     <div className="CommunityScreenShot">
-                                        <img id="community_main" src={logo} width="400px"
+                                        <img id="community_main" src={logo} alt="STAR D Logo" width="400px"
                                              data-aos="flip-left"/>
                                         <div className={"community-field_scrap"}>
-                                            <img id="c-field" src={logo} width="200px"
+                                            <img id="c-field" src={logo} alt="STAR D Logo" width="200px"
                                                  data-aos="flip-left"/>
-                                            <img id="c-scrap" src={logo} width="200px"
+                                            <img id="c-scrap" src={logo} alt="STAR D Logo" width="200px"
                                                  height={"80px"}
                                                  data-aos="flip-left"/>
                                         </div>
@@ -375,11 +375,11 @@ const Home = () => {
                                     함께 나누면 그 가치가 배가 됩니다.</p>
                                 <div id={"detail-images"}>
                                     <div className="TeamBlogScreenShot">
-                                        <img src={logo} width="400px" height="400px"
+                                        <img src={logo} alt="STAR D Logo" width="400px" height="400px"
                                              data-aos="fade-up"/>
                                     </div>
                                     <div className="TeamBlogScreenShot">
-                                        <img src={logo} width="200px" data-aos="fade-up"/>
+                                        <img src={logo} alt="STAR D Logo" width="200px" data-aos="fade-up"/>
                                     </div>
 
                                     <span>스터디원들과의 실시간 채팅과<br/>

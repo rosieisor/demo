@@ -118,7 +118,7 @@ const Footer = () => {
 				<div className="smallwidth_footer_info">
 
 					<p id="1" onClick={handlertoggle}>
-						STAR D <img src={arrow} width="15px" />
+						STAR D <img alt="STAR D Logo" src={arrow} width="15px" />
 					</p>
 					{toggle == true && (
 						<ul>
@@ -128,7 +128,7 @@ const Footer = () => {
 					)}
 					<hr />
 					<p id="2" onClick={handlertoggle2}>
-						고객센터 <img src={arrow2} width="15px" />
+						고객센터 <img alt="STAR D Logo" src={arrow2} width="15px" />
 					</p>
 					{toggle2 == true && (
 						<ul>
@@ -144,7 +144,7 @@ const Footer = () => {
 					<span>개인정보처리방침 이용약관</span>
 					<p id="3" onClick={handlertoggle3}>
 						(주)동덕 We B 사업자 정보{" "}
-						<img src={arrow3} width="15px" />
+						<img alt="STAR D Logo" src={arrow3} width="15px" />
 					</p>
 					{toggle3 == true && (
 						<ul>
