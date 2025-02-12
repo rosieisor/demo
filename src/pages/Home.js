@@ -53,14 +53,14 @@ const Home = () => {
     useEffect(() => {
         AOS.init();
 
-        axiosInstance.get("/studies/hot-field")
-            .then((res) => {
-                setTop5Field(res.data);
-                setFirstRow(res.data.slice(0, 3));
-                setSecondRow(res.data.slice(3));
-            }).catch(error => {
-            console.log(error);
-        });
+        // axiosInstance.get("/studies/hot-field")
+        //     .then((res) => {
+        //         setTop5Field(res.data);
+        //         setFirstRow(res.data.slice(0, 3));
+        //         setSecondRow(res.data.slice(3));
+        //     }).catch(error => {
+        //     console.log(error);
+        // });
 
         if (accessToken) {
             axios.get(`/api/members/to-dos`, {
@@ -84,14 +84,12 @@ const Home = () => {
     };
 
     useEffect(() => {
-        console.log("parsedTodos", parsedTodos);
         if (Array.isArray(parsedTodos)) {
             const filteredToDo = parsedTodos.filter((todo) => {
                 const todoDueDate = new Date(todo.dueDate).toDateString();
                 const todayDate = today.toDateString();
                 return todoDueDate === todayDate;
             });
-            console.log("filteredToDo: ", filteredToDo);
             setFilteredToDo(filteredToDo);
         } else {
             console.error("parsedTodos is not an array.");
@@ -150,18 +148,18 @@ const Home = () => {
                                     <p id={"tag-title"}>🎯 인기 분야 TOP 5</p>
                                     {/*<p id={"tag-subtitle"}>TOP 5</p>*/}
                                     <div className="dashboard_Tags">
-                                        {top5Field.map((item, index) => {
-                                            return (
-                                                <div className={"dashboard_tagname_wrap"}
-                                                     data-aos="fade-down"
-                                                     key={index}>
-                                                    <p id={"ranking"}>{index + 1}</p>
-                                                    <button id={"dashboard_tagbtn"}
-                                                            value={item.field}>{item.field}</button>
-                                                </div>
-                                            )
-                                        })
-                                        }
+                                        {/*{top5Field.map((item, index) => {*/}
+                                        {/*    return (*/}
+                                        {/*        <div className={"dashboard_tagname_wrap"}*/}
+                                        {/*             data-aos="fade-down"*/}
+                                        {/*             key={index}>*/}
+                                        {/*            <p id={"ranking"}>{index + 1}</p>*/}
+                                        {/*            <button id={"dashboard_tagbtn"}*/}
+                                        {/*                    value={item.field}>{item.field}</button>*/}
+                                        {/*        </div>*/}
+                                        {/*    )*/}
+                                        {/*})*/}
+                                        {/*}*/}
                                     </div>
                                 </div>
                             </div>
@@ -220,32 +218,32 @@ const Home = () => {
                                         한 눈에 확인해보세요!</p>
                                 </div>
                                 <div className="firstRow-tags">
-                                    {firstRow.map((item, index) => {
-                                        return (
+                                    {/*{firstRow.map((item, index) => {*/}
+                                    {/*    return (*/}
 
-                                            <div className={"tagname_wrap"}
-                                                 data-aos="flip-left">
-                                                <span id={"tag-grade"}>TOP {index + 1}</span>
-                                                <button id={"tagbtn"}
-                                                        value={item.field}>{item.field}</button>
-                                            </div>
+                                    {/*        <div className={"tagname_wrap"}*/}
+                                    {/*             data-aos="flip-left">*/}
+                                    {/*            <span id={"tag-grade"}>TOP {index + 1}</span>*/}
+                                    {/*            <button id={"tagbtn"}*/}
+                                    {/*                    value={item.field}>{item.field}</button>*/}
+                                    {/*        </div>*/}
 
-                                        )
-                                    })
-                                    }
+                                    {/*    )*/}
+                                    {/*})*/}
+                                    {/*}*/}
                                 </div>
                                 <div className="secondRow-tags">
-                                    {secondRow.map((item, index) => {
-                                        return (
-                                            <div className={"tagname_wrap"}
-                                                 data-aos="flip-left">
-                                                <span id={"tag-grade"}>TOP {index + 4}</span>
-                                                <button id={"tagbtn"}
-                                                        value={item.field}>{item.field}</button>
-                                            </div>
-                                        )
-                                    })
-                                    }
+                                    {/*{secondRow.map((item, index) => {*/}
+                                    {/*    return (*/}
+                                    {/*        <div className={"tagname_wrap"}*/}
+                                    {/*             data-aos="flip-left">*/}
+                                    {/*            <span id={"tag-grade"}>TOP {index + 4}</span>*/}
+                                    {/*            <button id={"tagbtn"}*/}
+                                    {/*                    value={item.field}>{item.field}</button>*/}
+                                    {/*        </div>*/}
+                                    {/*    )*/}
+                                    {/*})*/}
+                                    {/*}*/}
                                 </div>
 
                             </div>
