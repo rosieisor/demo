@@ -1,0 +1,168 @@
+#schedule_sub.sub_container{
+    width: 135%;
+    height: fit-content;
+    position: relative;
+    left:30px;
+}
+.Schedulecalendar{
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 40px;
+    margin-top: 10px;
+
+}
+.main_schedule_container{
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    margin-top: 15px;
+}
+.main_schedule_container .select_month{
+    width:auto;
+    height: 40px;
+    text-align:center;
+    font-size:15px;
+    padding:0 20px;
+    box-sizing: border-box;
+    margin:0 10px;
+}
+.main_schedule_container .schedule_list{
+    margin-top: 50px;
+}
+.main_schedule_container .schedule_list .schedule_date{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.main_schedule_container .schedule_list .schedule_title{
+    margin:0 0 10px 15px;
+    padding:5px 10px;
+    border-radius: 10px;
+    display: block; /* 글자만큼 너비 */
+    width: fit-content;    /* 글자 길이만큼만 너비 */
+    box-sizing: border-box;
+    white-space: nowrap;   /* 글자 길이에 맞춰 한 줄로 유지 */
+}
+.main_schedule_container .schedule_list .schedule_title p{
+    font-size: 17px;
+    margin:0;
+}
+
+.Schedulecalendar > .header.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+.text_today{
+    position: relative;
+    right: 7px;
+}
+
+.col.col-start{
+    width: 80%;
+} 
+.col.col-start .text{
+    font-size: 1.5rem;
+    width: 100%;
+}
+.Schedulecalendar > .header.row >.col.col-end{
+    width: 40%;
+    margin-left: 80%;
+}
+svg{
+    font-size: 2rem;
+    margin-left: 5px;
+}
+.Schedulecalendar > .days.row{
+    display: flex;
+    flex-direction: row;
+    /*width: 86%;*/
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Schedulerow{
+    display: flex;
+    flex-direction: row;
+   height: 90px;
+}
+.Schedulerow > .col.cell{
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    width: 14%;
+    height: auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.Schedulerow > .col.cell::-webkit-scrollbar {
+    width: 5px; /* 스크롤바 너비 */
+}
+
+.Schedulerow > .col.cell::-webkit-scrollbar-thumb {
+    background-color: #a5c9ca; /* 스크롤바 색상 */
+}
+.Schedulerow > .col.cell.selected{
+    overflow-y: auto;
+}
+.Schedulerow > .col.cell.selected::-webkit-scrollbar {
+/* 스크롤바 너비 */
+    width: 3px;
+
+}
+.Schedulerow > .col.cell.selected::-webkit-scrollbar-thumb {
+    height: 3px; /*스크롤바의 길이*/
+    background: gray; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.Schedulerow > .col.cell.selected::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+.col.cell:hover{
+    border: 1px solid red;
+}
+.Schedulerow > .col.cell > span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+.Schedulerow > .col.cell > span > svg{
+   margin-left: 0px;
+}
+.Schedulerow > .col.cell > span > svg:hover{
+    color: darkblue;
+ }
+ .Schedulerow > .col.cell > span.text.not-valid{
+    margin-left:0px;
+    width: 90%;
+}
+.col.cell.disabled{
+   color: #f2f2f2;
+   border: 1px solid #f2f2f2;
+}
+
+#meeting_detail >p{
+    margin-bottom: 2px;
+}
+#line{
+    width: 85px;
+    height:2px;
+    margin: 0px;
+}
+
+/*팀블로그 일정*/
+.TeamSchedulecalendar {
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 40px;
+    margin-top: 10px;
+}

@@ -1,0 +1,158 @@
+.page_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#find-id{
+    font-size: 1.7em;
+    color: #395b64;
+    font-family: 'Pretendard-Regular';
+}
+.findwrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.container_findwrap{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.container_find {
+    display: flex;
+    justify-content: center;
+}
+.infos{
+    align-items: center;
+}
+.input_infos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.input_infos p{
+    margin:10px 0 0;
+    font-family: "Pretendard-Regular";
+}
+.input_infos .subinfos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: 'Pretendard-Regular';
+    text-align: center;
+}
+.input_infos .sub{
+    margin: 30px 0 50px;
+}
+
+.subinfos2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#detail{
+    font-size: 13px;
+}
+.input_infos input {
+    margin-bottom: 0;
+    width: 250px;
+    height: 30px;
+    padding-left: 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    box-shadow: none;
+    outline: none;
+}
+.select_country {
+    position: relative;
+    width: 30%;
+    left: 20px;
+    right: 30px;
+    bottom: 13px;
+
+}
+select{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid #dbdbdb;
+    background: #fff;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
+}
+.Certification_Number1{
+    left: 50px;
+}
+
+.Certification_Number1 >button{
+    background-color: #7A8E6D;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Pretendard-Regular';
+    border-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.Certification_Number{
+    margin:25px 0 20px;
+}
+.Certification_Number >button{
+    background-color: #BBDF9F;
+    color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    border-style: none;
+    cursor: pointer
+}
+.receive_number{
+    position: relative;
+    bottom: 30px;
+}
+.receive_number input{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1.5px solid #a5c9ca;
+    position: relative;
+    top: 35px;
+}
+
+
+.findresult{
+    display: flex;
+    justify-content: center;
+}
+
+#result-id{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+.gotologin{
+    display: flex;
+    justify-content: center;
+}
+#go-to-login{
+    font-size: 15px;
+    background-color: #7A8E6D;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 62.5px;
+}

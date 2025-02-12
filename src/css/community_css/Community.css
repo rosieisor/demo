@@ -1,0 +1,251 @@
+input{
+    margin:inherit;
+}
+.community_container {
+    width: 70%;
+    height: auto;
+    min-height: 100%;
+    /*padding-bottom: 200px;*/
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-family: 'Pretendard-Regular';
+}
+.community_container h1 {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main_schedule_container .comment_form{
+    width:70%;
+}
+.main_schedule_container .comment_form > div{
+    width:100%;
+}
+
+.community_header{
+    display: flex;
+    justify-content: center;
+}
+.main_schedule_container .community_header{
+    margin-right:130px;
+}
+/*.community-content{*/
+/*    max-height: 1000px;*/
+/*}*/
+.community_header .new_post_btn{
+    background: #99A98F;
+    color:#fff;
+    border: none;
+    border-radius: 10px;
+    height: 51px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular';
+}
+
+.community{
+    font-size:15px;
+}
+.post_table{
+    width: 100%;
+    border-top:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    font-size:13px;
+}
+.post_table th,
+.post_table td{
+    padding:10px 10px;
+}
+.post_table tr{
+    text-align: center;
+    border-top:1px solid #d9d9d9;
+}
+
+.post_list .community_title:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.new_post_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.new_post_form div{
+    margin-bottom: 30px;
+}
+.new_post_form span{
+    display: inline-block;
+    width:70px;
+    font-size:15px;
+    text-align: right;
+    margin-right: 20px;
+}
+.new_post_form input{
+    width:100%;
+    height:35px;
+    margin-bottom: 0;
+    box-shadow: none;
+    line-height: 35px;
+}
+.new_post_form select{
+    height:35px;
+    border:1px solid #d9d9d9;
+    box-shadow: none;
+    padding-top:1px;
+    padding-bottom: 1px;
+}
+.new_post_form textarea{
+    width:100%;
+    height:300px;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    font-family: "Pretendard-Regular";
+}
+.btn{
+    margin:0 auto;
+}
+.btn .register_btn {
+    width:inherit;
+    height: inherit;
+    box-shadow: inherit;
+    background-color: #99A98F;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 50px;
+    font-family: 'Pretendard-Regular';
+    cursor: pointer;
+}
+.btn .register_btn:nth-of-type(1){
+    margin-right: 10px;
+}
+
+
+
+/* post_detail */
+.community_detail{
+    width:90%;
+    margin:40px auto 60px;
+}
+.main_schedule_container .community_detail{
+    width:80%;
+    margin:40px 50px 60px;
+}
+.community_detail .post_header{
+    font-size:13px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.community_detail .post_header .post_category{
+    margin-bottom: 20px;
+}
+.community_detail .post_header .post_title{
+    font-size:25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.community_detail .post_header .button button {
+    background-color: #99A98F;
+    border-radius: 50px;
+    font-family: 'Pretendard-Regular';
+    cursor: pointer;
+    color:#fff;
+    border: none;
+    padding:8px 15px;
+}
+.community_detail .post_header .post_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.community_detail .post_header .post_info .left .writer_profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.community_detail .post_header .post_info .left .writer_profile img{
+    width:14px;
+    height:14px;
+    margin-right:5px;
+}
+.community_detail .post_header .post_info .left .post_nickname{
+    font-weight: bold;
+    margin-right: 30px;
+}
+.community_detail .post_header .post_info .left .community_nickname{
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.community_detail .post_header .post_info .left .community_nickname .profile_image{
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.community_detail .post_header .post_info .right{
+    display: flex;
+    align-items: center;
+}
+.community_detail .post_header .post_info .right .like_btn,
+.community_detail .post_header .post_info .right .scrap_btn{
+    margin-right:10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.community_detail .post_content{
+    font-size:13px;
+    margin-bottom: 100px;
+}
+
+.community_detail .btn{
+   display: flex;
+    justify-content: center;
+}
+.community_detail .btn .community_list_btn{
+    width: inherit;
+    height: inherit;
+    box-shadow: inherit;
+    background-color: #99A98F;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 50px;
+    font-family: 'Pretendard-Regular';
+    cursor: pointer;
+}
+
+.download_box{
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    border-radius:10px;
+    padding:10px 20px;
+    width:200px;
+    text-align: center;
+    margin:0 auto 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download_box p{
+    margin-bottom: 0;
+}
+.download_box .download_btn{
+    cursor: pointer;
+}
+.download_box .download_btn:hover {
+    color: #99A98F;
+}

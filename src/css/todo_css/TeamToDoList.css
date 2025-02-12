@@ -1,0 +1,52 @@
+.TeamTodo_container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+}
+.TeamTodo_container h1 {
+    font-size: 27px;
+    text-align: center;
+    color: #395B64;
+    /*font-family: 'Pretendard-Regular';*/
+}
+/*담당자 선택란*/
+.select_assignee{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.select_assignee > p, .selected-assignees > p{
+    margin: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.assignees_list{
+    display: flex;
+}
+.assignees{
+    display: flex;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /*background-color: rgba(242, 241, 238, 0.6);*/
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.selected-assignees button{
+    background-color: rgba(242, 241, 238, 0.6);
+    margin-left: 5px;
+    color: #767678;
+    border-style: none;
+    font-size: 10px;
+    cursor: pointer;
+    position: relative;
+    bottom: 0px;
+    height: fit-content;
+}
